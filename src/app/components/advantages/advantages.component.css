@@ -1,0 +1,29 @@
+mat-toolbar{
+    width: 900;
+    margin: auto;     
+}
+mat-toolbar-row {
+    height: 75px;
+}
+.container {
+    margin-top: 40px;
+}
+.headerBlock{
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+}
+.blockQuarter{
+    margin-right: 20px;
+    width: 222px;
+    display: flex;
+    flex-direction: row;
+}
+.blockQuarter mat-icon {
+    margin-right: 10px;
+    margin-top: 10%;
+}
+.blockQuarterDetails h3, 
+.blockQuarterDetails p{
+    font-size: small;
+}
