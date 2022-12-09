@@ -1,0 +1,31 @@
+mat-tab-group {
+    width: 900px;
+    margin: auto;
+    overflow: none;
+}
+mat-card{
+    cursor: pointer;
+}
+mat-card-header img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.mat-card-container {
+    margin-top: 10px!important;
+}
+mat-card-title{
+    font-size: large;
+}
+mat-card-title a{
+    text-decoration: none;
+    color: black;
+}
+mat-card-title a:hover{
+    color: gray; 
+}
+mat-card-subtitle {
+    color: red;
+    font-weight: bold;
+}
