@@ -61,6 +61,42 @@
             </div>
         </div>
     </mat-tab>
-
-
 </mat-tab-group>
+
+<div class="showAll">
+    <button mat-raised-button color="primary">Show all products</button>
+</div>
+
+<div class="container">
+    <div fxLayout="row" class="imageAdvertising">
+        <mat-card fxLayoutGap="10px">
+            <img mat-card-image src="../../../assets/images/kerze1.webp" alt="Angebot">
+        </mat-card>
+
+        <mat-card>
+            <img mat-card-image src="../../../assets/images/kerze1.webp" alt="Angebot">
+        </mat-card>
+    </div>
+</div>
+
+<mat-toolbar color="primary" class="aboveFooterContainer">
+    <mat-toolbar-row>
+        <div class="container" fxLayout="row">
+            <div class="newsletterMessage" fxLayout="row">
+                <mat-icon fontIcon="message"></mat-icon>
+                <span>Get new offers via email</span>
+            </div>
+            <form [formGroup]="newsletter" (ngSubmit)="onSubmit()">
+                <mat-form-field>
+                    <input type="email" matInput formControlName="newsletter" class="newsletterInput">
+                    <button mat-raised-button type="submit" color="warn">Sign Up</button>
+                </mat-form-field>
+            </form>
+            <div class="icons">
+                <fa-icon [icon]="facebook"></fa-icon>
+                <fa-icon [icon]="twitter"></fa-icon>
+                <fa-icon [icon]="instagram"></fa-icon>
+            </div>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>

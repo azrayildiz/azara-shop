@@ -10,6 +10,7 @@ import { AppRouterModule } from './general/app-router/app-router.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SliderImagesComponent } from './components/slider-images/slider-images.component';
 import { AdvantagesComponent } from './components/advantages/advantages.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,8 @@ import { AdvantagesComponent } from './components/advantages/advantages.componen
     MaterialModule, 
     AppRouterModule, 
     FontAwesomeModule, 
+    FormsModule,
+    ReactiveFormsModule 
 
   ],
   providers: [],
